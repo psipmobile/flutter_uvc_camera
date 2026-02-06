@@ -62,10 +62,10 @@ android {
     }
 
     dependencies {
-        implementation('com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.6') {
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5') {
             transitive = false
         }
-        implementation('com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.6') {
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5') {
             transitive = false
         }
         implementation 'androidx.appcompat:appcompat:1.6.1'
