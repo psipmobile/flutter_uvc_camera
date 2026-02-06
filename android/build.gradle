@@ -66,10 +66,10 @@ android {
 
     dependencies {
         // JitPack dependencies with transitive disabled to avoid 401 errors
-        implementation('com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5') {
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.6') {
             transitive = false
         }
-        implementation('com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5') {
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.6') {
             transitive = false
         }
         
