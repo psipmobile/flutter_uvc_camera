@@ -65,12 +65,11 @@ android {
     }
 
     dependencies {
-        // implementation 'com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5'
-        // implementation 'com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5'
+        // Using local .aar files instead of JitPack dependencies
+        implementation(name: 'libnative-3.2.9', ext: 'aar')
+        implementation(name: 'libuvc-3.2.9', ext: 'aar')
         
         implementation 'androidx.appcompat:appcompat:1.6.1'
-        implementation fileTree(dir: 'libs', include: ['*.jar'])
-        implementation fileTree(dir: 'libs', include: ['*.aar'])
         implementation 'com.android.support.constraint:constraint-layout: 5.0.0'
         implementation 'com.google.code.gson:gson:2.8.8'
     }
