@@ -65,10 +65,13 @@ android {
     }
 
     dependencies {
-        // Using local .aar files with transitive = false to avoid JitPack 401 errors
-        implementation files('libs/libnative-3.2.9.aar')
-        implementation files('libs/libuvc-3.3.5.aar')
-        implementation files('libs/libausbc-3.3.5.aar')
+        // JitPack dependencies with transitive disabled to avoid 401 errors
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5') {
+            transitive = false
+        }
+        implementation('com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5') {
+            transitive = false
+        }
         
         implementation 'androidx.appcompat:appcompat:1.6.1'
         implementation 'com.google.android.material:material:1.9.0'
