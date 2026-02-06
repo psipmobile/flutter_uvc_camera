@@ -24,6 +24,9 @@ allprojects {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -64,6 +67,7 @@ android {
     dependencies {
         // implementation 'com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5'
         // implementation 'com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5'
+        
         implementation 'androidx.appcompat:appcompat:1.6.1'
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation fileTree(dir: 'libs', include: ['*.aar'])
