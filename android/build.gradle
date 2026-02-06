@@ -66,8 +66,8 @@ android {
 
     dependencies {
         // Using local .aar files instead of JitPack dependencies
-        implementation(name: 'libnative-3.2.9', ext: 'aar')
-        implementation(name: 'libuvc-3.2.9', ext: 'aar')
+        implementation files('libs/libnative-3.2.9.aar')
+        implementation files('libs/libuvc-3.2.9.aar')
         
         implementation 'androidx.appcompat:appcompat:1.6.1'
         implementation 'com.android.support.constraint:constraint-layout: 5.0.0'
