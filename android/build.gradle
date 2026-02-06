@@ -66,10 +66,12 @@ android {
 
     dependencies {
         // Using local .aar files with transitive = false to avoid JitPack 401 errors
+        implementation files('libs/libnative-3.2.9.aar')
         implementation files('libs/libuvc-3.3.5.aar')
         implementation files('libs/libausbc-3.3.5.aar')
         
         implementation 'androidx.appcompat:appcompat:1.6.1'
+        implementation 'com.google.android.material:material:1.9.0'
         implementation 'com.android.support.constraint:constraint-layout: 5.0.0'
         implementation 'com.google.code.gson:gson:2.8.8'
     }
