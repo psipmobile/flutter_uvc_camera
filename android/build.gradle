@@ -62,9 +62,9 @@ android {
     }
 
     dependencies {
-        // JitPack dependencies
-        implementation 'com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.0'
-        implementation 'com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.0'
+        // JitPack dependencies - using version 3.3.5 (verified on JitPack)
+        implementation 'com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.5'
+        implementation 'com.github.chenyeju295.AndroidUSBCamera:libuvc:3.3.5'
         
         implementation 'androidx.appcompat:appcompat:1.6.1'
         implementation 'com.android.support.constraint:constraint-layout: 5.0.0'
